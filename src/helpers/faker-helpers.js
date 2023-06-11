@@ -1,4 +1,4 @@
-const { faker } = require('@faker-js/faker');
+const faker = require('@faker-js/faker');
 
 
 const getAssetCodeName = () => {
@@ -11,10 +11,3 @@ const getAssetCoverStory = () => {
     return `${faker.person.jobType()} ${faker.person.jobTitle()}`   
 }
      
-
-
-module.exports = {
-    getAssetCodeName,
-    getAssetCoverStory,
-    getAssetBio
-}
